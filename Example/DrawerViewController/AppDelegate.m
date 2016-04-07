@@ -1,18 +1,55 @@
 //
-//  DrawerViewControllerAppDelegate.m
+//  AppDelegate.m
 //  DrawerViewController
 //
 //  Created by 蔡成汉 on 04/07/2016.
 //  Copyright (c) 2016 蔡成汉. All rights reserved.
 //
 
-#import "DrawerViewControllerAppDelegate.h"
+#import "AppDelegate.h"
+#import "DrawerViewController.h"
+#import "MySideViewController.h"
+#import "MainViewController.h"
 
-@implementation DrawerViewControllerAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    /**
+     *  创建抽屉 -- 用于托管侧边控制器+主页面控制器
+     */
+    DrawerViewController *drawerViewController = [[DrawerViewController alloc]init];
+    
+    /**
+     *  创建侧边控制器 -- 并且赋值给抽屉
+     */
+    MySideViewController *sideViewController = [[MySideViewController alloc]init];
+    drawerViewController.sideController = sideViewController;
+    
+    /**
+     *  创建主界面控制器
+     */
+    MainViewController *mainViewController = [[MainViewController alloc]init];
+    
+    /**
+     *  同时创建UINavigationController托管主界面控制器
+     */
+    UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:mainViewController];
+    
+    /**
+     *  抽屉托管导航控制器
+     */
+    drawerViewController.rootViewController = navigationController;
+    
+    /**
+     *  window托管抽屉
+     */
+    self.window.rootViewController = drawerViewController;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

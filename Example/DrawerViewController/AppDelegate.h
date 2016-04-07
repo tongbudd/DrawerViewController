@@ -1,5 +1,5 @@
 //
-//  DrawerViewControllerAppDelegate.h
+//  AppDelegate.h
 //  DrawerViewController
 //
 //  Created by 蔡成汉 on 04/07/2016.
@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface DrawerViewControllerAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
