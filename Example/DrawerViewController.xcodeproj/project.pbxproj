@@ -11,6 +11,8 @@
 		1B3C012A1CB62DD700102E54 /* MySideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C01241CB62DD700102E54 /* MySideViewController.m */; };
 		1B3C012B1CB62DD700102E54 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C01261CB62DD700102E54 /* MainViewController.m */; };
 		1B3C012C1CB62DD700102E54 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C01281CB62DD700102E54 /* TestViewController.m */; };
+		1B3C01321CB6334D00102E54 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C012F1CB6334D00102E54 /* DrawerViewController.m */; };
+		1B3C01331CB6334D00102E54 /* SideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3C01311CB6334D00102E54 /* SideViewController.m */; };
 		41C61301A895D2807841F3E6 /* Pods_DrawerViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B783758DE0BB5E9389842409 /* Pods_DrawerViewController_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -46,6 +48,10 @@
 		1B3C01261CB62DD700102E54 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		1B3C01271CB62DD700102E54 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		1B3C01281CB62DD700102E54 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		1B3C012E1CB6334D00102E54 /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		1B3C012F1CB6334D00102E54 /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		1B3C01301CB6334D00102E54 /* SideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideViewController.h; sourceTree = "<group>"; };
+		1B3C01311CB6334D00102E54 /* SideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideViewController.m; sourceTree = "<group>"; };
 		456E05682B90670B159B81D5 /* Pods-DrawerViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawerViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrawerViewController_Tests/Pods-DrawerViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		54CC5E5C6C5D1A4BED52A52D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DrawerViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawerViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +105,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B3C012D1CB6334D00102E54 /* DrawerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B3C012E1CB6334D00102E54 /* DrawerViewController.h */,
+				1B3C012F1CB6334D00102E54 /* DrawerViewController.m */,
+				1B3C01301CB6334D00102E54 /* SideViewController.h */,
+				1B3C01311CB6334D00102E54 /* SideViewController.m */,
+			);
+			name = DrawerViewController;
+			path = ../DrawerViewController;
+			sourceTree = "<group>";
+		};
 		2F1F79C16063600F03130735 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +131,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				1B3C012D1CB6334D00102E54 /* DrawerViewController */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for DrawerViewController */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -403,8 +422,10 @@
 				1B3C01291CB62DD700102E54 /* AppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				1B3C012A1CB62DD700102E54 /* MySideViewController.m in Sources */,
+				1B3C01321CB6334D00102E54 /* DrawerViewController.m in Sources */,
 				1B3C012B1CB62DD700102E54 /* MainViewController.m in Sources */,
 				1B3C012C1CB62DD700102E54 /* TestViewController.m in Sources */,
+				1B3C01331CB6334D00102E54 /* SideViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
